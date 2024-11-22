@@ -4,7 +4,7 @@ import plotly.express as px
 import streamlit as st
 
 # Chargement des données
-df = pd.read_excel("C:/Users/gauj7/Premier Tech/PTWE-FR - INNOVATIONS INDUSTRIELLES - General/07-PROJETS/Ambition énergétique/03- Data/01 - Gaz/GRDF/GRDF 20241118.xlsx")
+df = pd.read_excel("GRDF 20241118.xlsx")
 
 # Sélection et modification des colonnes nécessaires
 df2 = df[['N° PCE', 'Date de relevé', 'Energie consommée (kWh)']].copy()
