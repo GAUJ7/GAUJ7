@@ -4,7 +4,7 @@ import plotly.express as px
 import streamlit as st
 
 # Chargement des données
-df = pd.read_excel("/workspaces/GRDF 20241118.xlsx")
+df = pd.read_excel("GRDF 20241118.xlsx")
 # Sélection et modification des colonnes nécessaires
 df2 = df[['N° PCE', 'Date de relevé', 'Energie consommée (kWh)']].copy()
 df2['Horodate'] = pd.to_datetime(df2['Date de relevé'], format='%d/%m/%Y')
